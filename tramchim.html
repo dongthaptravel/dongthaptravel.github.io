@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Tràm Chim</title>
+        <link rel = "stylesheet" href = "assets/css/layout.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href = "assets/css/button.css">
+        <script src="assets/javascript/button.js"></script>
+        <script src = "assets/javascript/features.js"></script>
+        <script src="https://kit.fontawesome.com/c2e3085cbe.js" crossorigin="anonymous"></script>
+    </head>
+    <body id = "main_content">
+        <div class = "header">
+            <div>Vườn quốc gia Tràm Chim</div>
+            <ul type = "none">
+                <li onclick = "changeText(0)">Lịch sử</li>
+                <li onclick = "changeText(1)">Mô tả</li>
+                <li onclick = "changeText(2)">Dịch vụ</li>
+                <li onclick = "changeText(3)">Liên hệ</li>
+            </ul>
+            <div>
+                <i id = "lightbulb" style = "color:white" class="fas fa-lightbulb" onclick = "changeLight()" ></i>
+            </div>
+        </div>
+        <div class = "contain">
+            <div id = "content">
+                <div id = "pictures">
+                    <i id="left_arrow" class="fas fa-chevron-circle-left" onclick = "previous_images()"></i>
+                    <i id="right_arrow" class="fas fa-chevron-circle-right" onclick = "next_images()"></i>
+                    <img name = "tram-chim" src = "images/tram-chim/tram-chim-1.jpg" style = "display:block;">
+                    <img name = "tram-chim" src = "images/tram-chim/tram-chim-2.png" style = "display:none">
+                    <img name = "tram-chim" src = "images/tram-chim/tram-chim-3.jpg" style = "display:none">
+                    <img name = "tram-chim" src = "images/tram-chim/tram-chim-4.jpg" style = "display:none">
+                    <img name = "tram-chim" src = "images/tram-chim/tram-chim-5.jpg" style = "display:none">
+                </div>
+
+                <div id = "info">
+                    <div class = "text_area">
+                        <div id = "lichSu" name = "text" style = "display: block">
+                            <ul type = "disc" >
+                                <li>
+                                    Năm 1985, Tràm Chim được Ủy ban Nhân dân tỉnh Đồng Tháp thành lập với tên gọi 
+                                    là Công ty Nông Lâm Ngư trường Tràm Chim, với mục đích là trồng tràm và khai thác thủy sản, 
+                                    và vừa giữ lại được một phần hình ảnh của Đồng Tháp Mười xa xưa.
+                                </li> <br>
+
+                                <li>Năm 1986, loài sếu đầu đỏ (chim hạc, sếu cổ trụi), được tái phát hiện ở Tràm Chim.</li>
+    
+                                <li>
+                                    Năm 1991, Tràm Chim trở thành Khu Bảo tồn Thiên nhiên Tràm Chim cấp tỉnh, 
+                                    nhằm bảo tồn loài sếu đầu đỏ (Grus antigone sharpii).
+                                </li> <br>
+
+                                <li>
+                                    Năm 2016, gần 30 năm nhưng đây là lần đầu tiên cò ốc làm tổ, đẻ trứng cả đàn có đến ngàn tổ. Trước năm 2000 thi thoảng mới thấy một con cò ốc bay về. Thậm chí nhiều người nghĩ rằng cò ốc đã bị tuyệt chủng rồi. 
+                                    Trước tình trạng nguy cấp này, năm 2007 cò ốc được đưa vào Sách đỏ Việt Nam để bảo vệ nghiêm ngặt.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id = "moTa" name = "text" style = "display:none">
+                            <ul>
+                                <li>
+                                    Vườn quốc gia Tràm Chim nằm giữa các xã: Phú Đức, Phú Hiệp, Phú Thọ, Tân Công Sính, Phú Thành A và thị trấn Tràm Chim, huyện Tam Nông cách thành phố Cao Lãnh 40km. 
+                                    Vườn quốc gia Tràm Chim có diện tích 7.313ha, là nơi các nhà khoa học nghiên cứu về “Vùng đất lành chim đậu” và bàn về môi trường, môi sinh. Nơi đây cũng là điểm hẹn cho du khách thích trở về với thiên nhiên, 
+                                    cùng hệ sinh thái vô cùng phong phú, đa dạng và được xem là Đồng Tháp Mười thu nhỏ vì nó bao gồm đầy đủ hệ sinh thái của vùng đất ngập nước.
+                                </li> <br>
+    
+                                <li>
+                                    Thực vật có khoảng 130 loài nổi bật nhất là sen, sung, lúa ma, cỏ ống, năng ống, mầm mốc…đồng thời nơi này cũng chính là nơi cư trú của hàng trăm loài động vật có xương sống, hàng chục loài cá và hơn 198 loài chim nước, 
+                                    chiếm khoảng ¼ số loài chim có ở Việt Nam . Trong đó, có nhiều loài chim quý hiếm trên thế giới như: Ngang cánh trắng, Te vàng, Bồ Nông, Gà Đãy Java và đặc biệt là Sếu đầu đỏ, chúng được xếp vào sách đỏ thế giới cần được bảo vệ vì đang có nguy cơ tuyệt chủng.
+                                </li> <br>
+                            </ul>
+                        </div>
+
+                        <div id = "dichVu" name = "text" style = "display:none">
+                            <ul type = "square">
+                                <li>
+                                    Thám Hiểm MeKong chuyên tổ chức các tour Đồng Tháp tham quan vườn quốc gia Tràm Chim chất lượng giá tốt nhất. Tour vườn quốc gia Tràm Chim mang đến cho du khách những trải nghiệm mới lạ: thả lưới – đặt lờ, chèo thuyền xuyên qua rừng tràm, 
+                                    ngắm những loài chim mùa sinh sản vào mùa nước nổi. Vườn quốc gia Tràm Chim là điểm du lịch Đồng Tháp không thể bỏ qua dành cho du khách yêu thích không gian êm ả, yên tĩnh của miền Tây sông nước.
+                                </li><br>
+                                <li>Tour Vườn Quốc Gia Tràm Chim 1 ngày từ TP HCM</li><br>
+                                <li>Tour Vườn Quốc Gia Tràm Chim 1 ngày từ TP Cần Thơ</li><br>
+                            </ul>
+                        </div>
+
+                        <div id = "lienHe" name = "text" style = "display:none;">
+                            <ul type = "disc">
+                                <li>SĐT: 0277.3827436 - 0277.8575678</li> <br>
+                                <li>Email: dulichtramchim@gmail.com</li> <br>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="main">
+                        <!-- Start: Fair button  -->
+                        <div id="book-btn" class="fair-btn">
+                
+                            <button onclick="bookTicket()">Đặt vé</button>
+                
+                        </div>
+                        <!-- End: Fair button  -->
+                
+                        <div id="modal">
+                
+                            <!-- Start: Register Form  -->
+                        <div id="form-frame" class="">
+                
+                            <div class="form-heading">
+                                <h2>Thông tin đặt vé</h2>
+                                <p onclick="exitBookForm()">X</p>
+                            </div>
+                
+                            <div class="form-content">
+                
+                                <i class="fas fa-user"></i>
+                                <label for="fullName">Họ và tên <br></label>
+                                <input id="fullName" type="text"> <br>
+                
+                                <i class="fas fa-address-card"></i>
+                                <label for="address">Địa chỉ <br></label>
+                                <input id="address" type="text"> <br>
+                
+                                <i class="fas fa-sort-amount-up-alt"></i>
+                                <label for="fair-amount">Số lượng vé <br></label>
+                                <input id="fair-amount" type="number"> <br>
+                
+                                <i class="fab fa-firstdraft"></i>
+                                <label for="type-fair">Loại vé <br></label>
+                                <select id="type-fair">
+                                    <option value="1">Bình dân - 150.000 VND</option>
+                                    <option value="2">Trung bình - 250.000 VND</option>
+                                    <option value="3">Đặc biệt - 350.000 VND</option>
+                                </select>
+                
+                                <div id="check-full">
+                                    Đặt vé thất bại, vui lòng kiểm tra lại thông tin
+                                </div>
+                                
+                            </div>
+                
+                            <div class="form-btn">
+                                <button type="button" onclick="confirmTicket()">XÁC NHẬN ĐẶT VÉ</button>
+                            </div>
+                
+                        </div>
+                        <!-- End: Register Form  -->
+                
+                        <!-- Start: Check Frame -->
+                        <div id="check-frame">
+                
+                            <div class="check-content">
+                                <i class="far fa-check-circle"></i>
+                                <h2>ĐẶT VÉ THÀNH CÔNG!</h2>
+                                <p id="customer"></p>
+                                <p id="type"></p>
+                                <p id="amount"></p>
+                                <p id="bill"></p>
+                                <button type="button" onclick="goHome()">TRANG CHỦ</button>
+                            </div>
+                
+                        </div>
+                        <!-- end: Check Frame -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
