@@ -1,0 +1,68 @@
+
+#slider{
+    margin-top: 50px;
+    margin-left: 3%;
+    width: 668px;
+    height: 455px;
+    border: 3px solid black;
+    position: relative;
+}
+.slide{
+    width: 662px;
+    height: 450px;
+}
+#divlast{
+    position: absolute;
+    margin-left: 50%;
+    top :170px;
+    right: 90px;
+}
+#divbeforelast{
+    position: absolute;
+    margin-left: 50%;
+    top :163px;
+    right: 90px;
+}
+#dichvu{
+    position: absolute;
+    margin-left: 50%;
+    top :120px;
+    right: 90px;
+}
+#lienhe{
+    position: absolute;
+    margin-left: 50%;
+    top :120px;
+    right: 90px;
+}
+#prev{
+    position: absolute;
+    text-transform:uppercase;
+    align-items: center;
+    top: 200px;
+    left: 5%;
+    position:absolute;
+}
+#next{
+    position: absolute;
+    text-transform: uppercase;
+    top:200px;
+    right: 5%;
+    position: absolute;
+}
+a:link, a:visited {
+    text-decoration: none; 
+}
+a:hover, a:active {
+    text-decoration:none;
+}
+a.span
+{
+    color: white;
+    font-size: 25px;
+    vertical-align: middle;
+    margin-left: 50px;
+}
+.span{
+    margin-right: 50px;
+}
