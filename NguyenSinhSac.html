@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Khu Di Tích Nguyễn Sinh Sắc</title>
+        <link rel="shortcut icon" href="/assets/img/logoTab.png">
+        <link rel = "stylesheet" href = "/assets/css/layout_hai.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href = "/assets/css/button_hai.css">
+        <script src="/assets/javascript/button_hai.js"></script>
+        <script src = "/assets/javascript/features_hai.js"></script>
+        <script src="https://kit.fontawesome.com/c2e3085cbe.js" crossorigin="anonymous"></script>
+    </head>
+    <body id = "main_content">
+        <div class = "header">
+            <div>Khu Di Tích Nguyễn Sinh Sắc </div>
+            <ul type = "none">
+                <li onclick = "changeText(0)">Lịch sử</li>
+                <li onclick = "changeText(1)">Mô tả</li>
+                <li onclick = "changeText(2)">Dịch vụ</li>
+                <li onclick = "changeText(3)">Liên hệ</li>
+            </ul>
+            <div>
+                <i id = "lightbulb" style = "color:white" class="fas fa-lightbulb" onclick = "changeLight()" ></i>
+            </div>
+        </div>
+        <div class = "contain">
+            <div id = "content">
+                <div id = "pictures">
+                    <i id="left_arrow" class="fas fa-chevron-circle-left" onclick = "previous_images()"></i>
+                    <i id="right_arrow" class="fas fa-chevron-circle-right" onclick = "next_images()"></i>
+                    <img name = "tram-chim" src = "/assets/img/nguyen-sinh-sac/nguyen-sinh-sac-1.jpg" style = "display:block;">
+                    <img name = "tram-chim" src = "/assets/img/nguyen-sinh-sac/nguyen-sinh-sac-2.jpg" style = "display:none">
+                    <img name = "tram-chim" src = "/assets/img/nguyen-sinh-sac/nguyen-sinh-sac-3.jpg" style = "display:none">
+                    <img name = "tram-chim" src = "/assets/img/nguyen-sinh-sac/nguyen-sinh-sac-4.jpg" style = "display:none">
+                    <img name = "tram-chim" src = "/assets/img/nguyen-sinh-sac/nguyen-sinh-sac-5.jpg" style = "display:none">
+                </div>
+
+                <div id = "info">
+                    <div class = "text_area">
+                        <div id = "lichSu" name = "text" style = "display: block">
+                            <ul type = "disc" >
+                                <li type = "none">
+                                    Khu di tích Nguyễn Sinh Sắc được xây dựng vào ngày 22/8/1975 và khánh thành vào ngày 13/2/1977; 
+                                    đến ngày 19/5/1990 - kỷ niệm 100 năm ngày sinh Chủ Tịch Hồ Chí Minh, 
+                                    Khu di tích Nguyễn Sinh Sắc đã mở rộng thêm Mô hình nhà sàn Bác (tỉ lệ 1/1) và Ao Sen; tiếp đến vào ngày 2/12/2010, 
+                                    nhân lễ giỗ lần thứ 81 Cụ Phó bảng Nguyễn Sinh Sắc (27/10 âm lịch), Khu di tích Nguyễn Sinh Sắc đã đưa công trình “bảo tồn, 
+                                    tôn tạo và phát huy giá trị mộ cụ Nguyễn Sinh Sắc” đi vào hoạt động.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id = "moTa" name = "text" style = "display:none">
+                            <ul>
+                                <li>
+                                    Ngôi mộ Cụ Phó bảng quay về hướng đông, có mái hình cánh sen cách điệu giống hình dáng bàn tay xòe úp xuống; 
+                                    trên mái đắp nổi tượng chín con rồng, tượng trưng cho các tỉnh Đồng bằng Sông Cửu Long luôn che chở và bảo vệ ngôi mộ người chí sĩ yêu nước. 
+                                    Mộ được ốp bằng đá hoa cương, nền mộ bằng đá mài hình lục giác không đều, mở rộng dần ra hai bên và phía trước. 
+                                    Trên mộ có một đỉnh trầm bằng đá Ngũ Hành Sơn, ngày đêm khói hương thơm ngát. Khuôn viên lăng mộ có nhiều loại cây cảnh, 
+                                    hoa trái quý hiếm được bà con khắp cả nước mang về trồng lưu niệm, đặc biệt là cây khế gần 300 tuổi (nằm bên trái mộ) và cây sộp hơn 300 tuổi (nằm bên phải mộ).
+                                </li> <br>
+
+                                <li>
+                                    Phía trước mộ là Ao sen hình ngôi sao 5 cánh, chính giữa sừng sững một đài sen trắng cách điệu cao gần 7m, tượng trưng cho cuộc đời thanh bạch, 
+                                    lương tâm trong sáng của Cụ Phó bảng Nguyễn Sinh Sắc, và đó cũng là biểu tượng cho quê hương Đồng Tháp.
+                                </li> <br>
+                            </ul>
+                        </div>
+
+                        <div id = "dichVu" name = "text" style = "display:none">
+                            <ul type = "disc">
+                                <li>Giá vé: miễn phí</li> <br>
+                                <li>
+                                    Hàng năm, cứ vào ngày 27/10 âm lịch, nhân dân các vùng lân cận lại hội tụ về đây tham dự lễ giỗ Cụ Phó bảng Nguyễn Sinh Sắc trong không khí trang nghiêm, 
+                                    đậm đà bản sắc dân tộc, thể hiện truyền thống “Uống nước nhớ nguồn”. Tỉnh Đồng Tháp đã quyết định nâng ngày giỗ Cụ Phó bảng Nguyễn Sinh Sắc hằng năm lên thành lễ hội cấp tỉnh.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id = "lienHe" name = "text" style = "display:none;">
+                            <ul type = "disc">
+                                <li>Số điện thoại: 02773 874 745</li> <br>
+                                <li>Email: ditichnguyensinhsac@gmail.com</li> <br>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="main">
+                        <!-- Start: Fair button  -->
+                        <div id="book-btn" class="fair-btn">
+                
+                            <button onclick="bookTicket()">Đặt vé</button>
+                
+                        </div>
+                        <!-- End: Fair button  -->
+                
+                        <div id="modal">
+                
+                            <!-- Start: Register Form  -->
+                        <div id="form-frame" class="">
+                
+                            <div class="form-heading">
+                                <h2>Thông tin đặt vé</h2>
+                                <p onclick="exitBookForm()">X</p>
+                            </div>
+                
+                            <div class="form-content">
+                
+                                <i class="fas fa-user"></i>
+                                <label for="fullName">Họ và tên <br></label>
+                                <input id="fullName" type="text"> <br>
+                
+                                <i class="fas fa-address-card"></i>
+                                <label for="address">Địa chỉ <br></label>
+                                <input id="address" type="text"> <br>
+                
+                                <i class="fas fa-sort-amount-up-alt"></i>
+                                <label for="fair-amount">Số lượng vé <br></label>
+                                <input id="fair-amount" type="number"> <br>
+                
+                                <i class="fab fa-firstdraft"></i>
+                                <label for="type-fair">Loại vé <br></label>
+                                <select id="type-fair">
+                                    <option value="1">Bình dân - 150.000 VND</option>
+                                    <option value="2">Trung bình - 250.000 VND</option>
+                                    <option value="3">Đặc biệt - 350.000 VND</option>
+                                </select>
+                
+                                <div id="check-full">
+                                    Đặt vé thất bại, vui lòng kiểm tra lại thông tin
+                                </div>
+                                
+                            </div>
+                
+                            <div class="form-btn">
+                                <button type="button" onclick="confirmTicket()">XÁC NHẬN ĐẶT VÉ</button>
+                            </div>
+                
+                        </div>
+                        <!-- End: Register Form  -->
+                
+                        <!-- Start: Check Frame -->
+                        <div id="check-frame">
+                
+                            <div class="check-content">
+                                <i class="far fa-check-circle"></i>
+                                <h2>ĐẶT VÉ THÀNH CÔNG!</h2>
+                                <p id="customer"></p>
+                                <p id="type"></p>
+                                <p id="amount"></p>
+                                <p id="bill"></p>
+                                <button type="button" onclick="goHome()">TRANG CHỦ</button>
+                            </div>
+                
+                        </div>
+                        <!-- end: Check Frame -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

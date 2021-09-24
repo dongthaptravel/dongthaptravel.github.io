@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Làng Hoa Sa Đéc</title>
+        <link rel="shortcut icon" href="/assets/img/logoTab.png">
+        <link rel = "stylesheet" href = "/assets/css/layout_hai.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href = "/assets/css/button_hai.css">
+        <script src="/assets/javascript/button_hai.js"></script>
+        <script src = "/assets/javascript/features_hai.js"></script>
+        <script src="https://kit.fontawesome.com/c2e3085cbe.js" crossorigin="anonymous"></script>
+    </head>
+    <body id = "main_content">
+        <div class = "header">
+            <div>Làng Hoa Sa Đéc</div>
+            <ul type = "none">
+                <li onclick = "changeText(0)">Lịch sử</li>
+                <li onclick = "changeText(1)">Mô tả</li>
+                <li onclick = "changeText(2)">Dịch vụ</li>
+                <li onclick = "changeText(3)">Liên hệ</li>
+            </ul>
+            <div>
+                <i id = "lightbulb" style = "color:white" class="fas fa-lightbulb" onclick = "changeLight()" ></i>
+            </div>
+        </div>
+        <div class = "contain">
+            <div id = "content">
+                <div id = "pictures">
+                    <i id="left_arrow" class="fas fa-chevron-circle-left" onclick = "previous_images()"></i>
+                    <i id="right_arrow" class="fas fa-chevron-circle-right" onclick = "next_images()"></i>
+                    <img name = "tram-chim" src = "/assets/img/lang-hoa-sa-dec/lang-hoa-sa-dec-1.jpg" style = "display:block;">
+                    <img name = "tram-chim" src = "/assets/img/lang-hoa-sa-dec/lang-hoa-sa-dec-2.jpg" style = "display:none">
+                    <img name = "tram-chim" src = "/assets/img/lang-hoa-sa-dec/lang-hoa-sa-dec-3.jpg" style = "display:none">
+                    <img name = "tram-chim" src = "/assets/img/lang-hoa-sa-dec/lang-hoa-sa-dec-4.jpg" style = "display:none">
+                    <img name = "tram-chim" src = "/assets/img/lang-hoa-sa-dec/lang-hoa-sa-dec-5.jpg" style = "display:none">
+                </div>
+
+                <div id = "info">
+                    <div class = "text_area">
+                        <div id = "lichSu" name = "text" style = "display: block">
+                            <ul type = "disc" >
+                               <li>
+                                    Làng hoa Sa Đéc hình thành từ những năm đầu thế kỷ XX, bấy giờ ở vùng Tân Quy Đông chỉ có vài hộ trồng hoa để trang trí Tết. 
+                                    Thấy hoa hợp đất nở đẹp, dần dần số hộ trồng hoa tăng lên và mục đích kinh doanh được xác định.
+                               </li> <br>
+
+                               <li>
+                                    Hiện nay, làng hoa Sa Đéc có khoảng 3000 hộ dân, đa số họ sống bằng nghề trồng hoa, diện tích trồng hoa ở làng hoa Sa Đéc khoảng 500 ha, 
+                                    trồng tới hàng trăm loài hoa. 
+                               </li> <br>
+                            </ul>
+                        </div>
+
+                        <div id = "moTa" name = "text" style = "display:none">
+                            <ul>
+                                <li>
+                                    Làng hoa kiểng Sa Đéc cách trung tâm thành phố Sa Đéc 03km, có diện tích 313ha, 
+                                    với 1.968 hộ dân sinh sống. Thế mạnh của làng hoa là có hai mặt tiếp giáp với sông Tiền và sông Sa Đéc, 
+                                    thuận tiện cho việc vận chuyển bằng đường thủy và đường bộ. Nghề trồng hoa kiểng được hình thành từ những năm 1930, 
+                                    tiêu biểu là vườn hồng của ông Dương Hữu Tài (Tư Tôn) có hơn 400 loài hoa và dược liệu quý.
+                               </li> <br>
+
+                               <li>
+                                    Nói đến hoa và kiểng, người ta không thể không nghĩ đến địa danh Sa Đéc. Gần một trăm năm qua, 
+                                    Sa Đéc nổi tiếng khắp cả nước với nghề trồng hoa kiểng, cây cảnh truyền thống. 
+                                    Sản phẩm hoa, cây cảnh của Sa Đéc cung cấp cho các tỉnh vùng đồng bằng sông Cửu Long, 
+                                    thành phố Hồ Chí Minh, các tỉnh miền Trung, thị trường Campuchia và đang hướng đến các thị trường xuất khẩu khác.
+                               </li> <br>
+
+                            </ul>
+                        </div>
+
+                        <div id = "dichVu" name = "text" style = "display:none">
+                            <ul type = "disc">
+                                <li type = "none">Giá vé vào cổng hiện nay ở Làng Hoa Sa Đéc là miễn phí. 
+                                    Tuy vậy bạn có thể sử dụng thêm dịch vụ xe điện hay tham quan các khu du lịch bên trong đó.
+                                </li> <br>
+
+                               <li> Xe điện đến kdl Hùng Thy Happy Land: 30.000đ (Gần đoạn cuối đường hoa trung tâm).</li>
+                               <li>Xe điện đến tháp quan sát: 20.000đ (Gần đoạn giữa đường hoa trung tâm)</li>
+                               <li>Xe điện đến kdl Cánh Đồng Hoa Hồng + vé tham quan: 100.000đ/người.</li>
+                               <li>Dịch vụ giữ xe máy: 5.000đ/xe.</li>
+                            </ul>
+                        </div>
+
+                        <div id = "lienHe" name = "text" style = "display:none;">
+                            <ul type = "disc">
+                                <li>Số điện thoại: 02773859919</li> <br>
+                                <li>Email: langhoasadec@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="main">
+                        <!-- Start: Fair button  -->
+                        <div id="book-btn" class="fair-btn">
+                
+                            <button onclick="bookTicket()">Đặt vé</button>
+                
+                        </div>
+                        <!-- End: Fair button  -->
+                
+                        <div id="modal">
+                
+                            <!-- Start: Register Form  -->
+                        <div id="form-frame" class="">
+                
+                            <div class="form-heading">
+                                <h2>Thông tin đặt vé</h2>
+                                <p onclick="exitBookForm()">X</p>
+                            </div>
+                
+                            <div class="form-content">
+                
+                                <i class="fas fa-user"></i>
+                                <label for="fullName">Họ và tên <br></label>
+                                <input id="fullName" type="text"> <br>
+                
+                                <i class="fas fa-address-card"></i>
+                                <label for="address">Địa chỉ <br></label>
+                                <input id="address" type="text"> <br>
+                
+                                <i class="fas fa-sort-amount-up-alt"></i>
+                                <label for="fair-amount">Số lượng vé <br></label>
+                                <input id="fair-amount" type="number"> <br>
+                
+                                <i class="fab fa-firstdraft"></i>
+                                <label for="type-fair">Loại vé <br></label>
+                                <select id="type-fair">
+                                    <option value="1">Bình dân - 150.000 VND</option>
+                                    <option value="2">Trung bình - 250.000 VND</option>
+                                    <option value="3">Đặc biệt - 350.000 VND</option>
+                                </select>
+                
+                                <div id="check-full">
+                                    Đặt vé thất bại, vui lòng kiểm tra lại thông tin
+                                </div>
+                                
+                            </div>
+                
+                            <div class="form-btn">
+                                <button type="button" onclick="confirmTicket()">XÁC NHẬN ĐẶT VÉ</button>
+                            </div>
+                
+                        </div>
+                        <!-- End: Register Form  -->
+                
+                        <!-- Start: Check Frame -->
+                        <div id="check-frame">
+                
+                            <div class="check-content">
+                                <i class="far fa-check-circle"></i>
+                                <h2>ĐẶT VÉ THÀNH CÔNG!</h2>
+                                <p id="customer"></p>
+                                <p id="type"></p>
+                                <p id="amount"></p>
+                                <p id="bill"></p>
+                                <button type="button" onclick="goHome()">TRANG CHỦ</button>
+                            </div>
+                
+                        </div>
+                        <!-- end: Check Frame -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Đồng Sen Tháp Mười</title>
+    <link rel="stylesheet" href="/assets/css/dongsenthap10_thien.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="/assets/javascript/dongsenthapmuoi_thien.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="/assets/css/button_thien.css">
+    <script src="/assets/javascript/button_hai.js"></script>
+    <script src="https://kit.fontawesome.com/c2e3085cbe.js" crossorigin="anonymous"></script>
+</head>
+<body id="body"  style="background: rgb(240, 250, 249);">
+    <div  id="div1">
+        <div style="background-color:rgb(9, 37, 5);color: white;padding: 20px;">
+            <a href="#1" class="span"> <span style="font-size: 40px;vertical-align: middle ;"><strong>Đồng Sen Tháp Mười</strong></span></a>
+        <span style="float: right;">
+            <a href="#2" class="span"  onclick="lichsu()"><span id="span1" style="vertical-align: middle ;font-size: 20px;"><strong>Lịch sử</strong></span></a>
+            <a href="#3" class="span"  onclick="dichvu()"><span id="span2" style="vertical-align: middle ;font-size: 20px;"><strong>Mô tả</strong></span></a>
+            <a href="#4" class="span"  onclick="mota()"><span id="span3" style="vertical-align: middle ;font-size: 20px;"><strong>Dịch vụ</strong></span></a>
+            <a href="#5" class="span"  onclick="lienhe()"><span id="span4" style="vertical-align: middle ;font-size: 20px;"><strong>Liên hệ</strong></span></a>
+            <span style="display: flex;float: right;width: 50px;height: 50px;">
+                <img id="img1" src="../../image/sangtoi.png" alt="" usemap="#giaodien" style="border: 2px solid black;border-radius: 100%;" >
+                <map name="giaodien">
+                    <area shape="rect" coords="0,0,26,48" onclick="tatden()" onmouseover="on1()" onmouseout="off()">
+                    <area shape="rect" coords="26,0,50,50" onclick="moden()" onmouseover="on()" onmouseout="off1()">
+                </map>
+                <p style="float: right;vertical-align: middle;display:none;">
+                    <b>&ensp;Language : </b>
+                    <input type="radio" name="ngonngu" onclick="tiengviet()" checked>Tiếng Việt</input>
+                    <input type="radio" name="ngonngu" onclick="english()">English</input>
+                </p>
+            </span>
+        </span>
+        </div>
+        <br>  
+    <div id="slider" style="display: flex;">
+        <img class="slide" src="/assets/img/dong-sen-thap-muoi/dong-sen-thap-muoi-1.jpg" stt="0">
+        <img class="slide" src="/assets/img/dong-sen-thap-muoi/dong-sen-thap-muoi-2.jpg" stt="1" style="display : none;">
+        <img class="slide" src="/assets/img/dong-sen-thap-muoi/dong-sen-thap-muoi-3.jpg" stt="2" style="display : none;">
+        <img class="slide" src="/assets/img/dong-sen-thap-muoi/dong-sen-thap-muoi-4.jpg" stt="3" style="display : none;">
+        <img class="slide" src="/assets/img/dong-sen-thap-muoi/dong-sen-thap-muoi-5.jpg" stt="4" style="display : none;">
+        <a href="#5" id="prev"><img src="/assets/img/arrow-left.png"/></a>
+        <a href="#6" id="next"><img src="/assets/img/arrow-right.png"/></a>
+    </div>
+        <div style="margin-right: 5%;">
+            <div id="divbeforelast"> 
+                <ul id="ul1" style="width: 500px;height: 400px;text-align: justify;font-size: 20px;margin-left: 40px;">
+                    <li id="li1"><strong>Địa chỉ:</strong> Xã Mỹ Hòa, huyện Tháp Mười</li><br>
+                    <p id="p1" style="text-align: center;">&#10030;<b>Mô tả</b>&#10030;</p>
+                    <span id="span5">Khu du lịch sinh thái <strong>Đồng Tháp Mười</strong> có diện tích lên tới 11ha tích hợp cho những người muốn 
+                    tìm đến không gian thoáng đãng, mang phong vị đồng quê.</span>
+                </ul>
+            </div>
+            <div id="divlast" style="display: none;">
+                <ul style="width: 500px;height: 400px;text-align: justify;font-size: 20px;margin-left: 40px;">
+                    <p id="p2" style="text-align: center;">&#10030;<b>Dịch vụ</b>&#10030;</p>
+                    <li id="li2">
+                        Đến đây, du khách có thể thỏa thích ngắm sen trên các chòi được đầu tư rải rác trên khắp đồng, 
+                        tận hưởng trọn vẹn một bầu không khí êm dịu, thuần khiết, 
+                        nhập vai thành cô thôn nữ đồng sen với áo bà ba, 
+                        nón lá để chụp ảnh hay tự tay hái những bông sen hồng tươi giữa không gian bạt ngàn nắng gió.
+                    </li>
+                        <br>
+                    <li id="li3">
+                        Không chỉ vậy, bạn còn được thưởng thức các món ăn đậm đà hương vị địa phương như chè sen, 
+                        xôi sen, gỏi gà ngó sen, cá lóc nướng lá sen…
+                    </li>
+                </ul>
+            </div>
+            <div id="lienhe" style="display: none;">
+                <span style="width: 500px;font-size: 20px;">
+                    <p id="p2" style="text-align: center;">&#10030;<b>Liên hệ</b>&#10030;</p><br>
+                    <p style="width: 600px;">
+                        <span>&#851;	Đường dây nóng : 0277.3851.869&#851;	</span><br><br>
+                        <span>&#851;	Địa chỉ : SỞ VĂN HÓA,THỂ THAO DU LỊCH TỈNH ĐỒNG THÁP&#851;	</span><br><br>
+                        <span>&#843;    Số 3,đường Phạm Hữu Lầu - Phường 4 - Thanh phớ Cao Lãnh - Đồng Tháp	&#843;	</span>
+                    </p>
+                </span>
+            </div>
+            <div id="lichsu" style="display: none;">
+                <span style="font-size: 20px;">
+                    <p id="p2" style="text-align: center;">&#10030;<b>Lịch sử</b>&#10030;</p>
+                    <p style="width: 600px;font-size: 18px;text-align: justify;">&#9866; Đồng Tháp là một khu vực mới được trồng từ thế kỷ 17 và 18, dưới thời các lãnh chúa nhà Nguyễn.
+                        <br>&#9866; Sau cuộc nội chiến giữa anh chị em Nguyễn Ánh và Tây Sơn, Gia Long lên ngôi để giúp ổn định Sa Đéc và biến nó thành một phần của huyện Vĩnh An. Sa Đéc, khi đó với vị trí địa lý thuận lợi, đã trở thành trung tâm thương mại đông đúc nhất của đồng bằng sông Cửu Long vào thời điểm đó, chỉ nhỏ hơn Chợ Lớn trong Sài Gòn.
+                        Ghi chép trong sử sách rằng vào cuối thế kỷ XVII, hay đầu thế kỷ XVII, một số Việt kiều tại ấp Bảy Cảnh (hiện thuộc xã Đập Đá, thị trấn Đập Đá, tỉnh Bình Định) đã đến canh tác và định cư gần quán rivulet Cái Sao Thượng, tạo thành xã Bảy Canh. Nguyễn Tú được công nhận đã tập hợp được người, tu luyện và thành lập các ấp. Ông được nâng lên vị thế của Tiền Hiền - một người công bình cổ xưa - của làng. Ngày nay, tấm bia đó đã được tìm thấy gần cầu Đình Trung, phường 2, thành phố Cao Lãnh.
+                        <br>&rArr;Cao Lãnh, từ ngày 30 tháng 4 năm 1975, đã được sáp nhập với Sa Đéc để trở thành tỉnh Đồng Tháp.</p>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <!-- Start: Fair button  -->
+        <div id="book-btn" class="fair-btn">
+
+            <button onclick="bookTicket()">Đặt vé</button>
+
+        </div>
+        <!-- End: Fair button  -->
+
+        <div id="modal">
+
+            <!-- Start: Register Form  -->
+        <div id="form-frame" class="">
+
+            <div class="form-heading">
+                <h2>Thông tin đặt vé</h2>
+                <p onclick="exitBookForm()">X</p>
+            </div>
+
+            <div class="form-content">
+
+                <i class="fas fa-user"></i>
+                <label for="fullName">Họ và tên <br></label>
+                <input id="fullName" type="text"> <br>
+
+                <i class="fas fa-address-card"></i>
+                <label for="address">Địa chỉ <br></label>
+                <input id="address" type="text"> <br>
+
+                <i class="fas fa-sort-amount-up-alt"></i>
+                <label for="fair-amount">Số lượng vé <br></label>
+                <input id="fair-amount" type="number"> <br>
+
+                <i class="fab fa-firstdraft"></i>
+                <label for="type-fair">Loại vé <br></label>
+                <select id="type-fair">
+                    <option value="1">Bình dân - 150.000 VND</option>
+                    <option value="2">Trung bình - 250.000 VND</option>
+                    <option value="3">Đặc biệt - 350.000 VND</option>
+                </select>
+
+                <div id="check-full">
+                    Đặt vé thất bại, vui lòng kiểm tra lại thông tin
+                </div>
+                
+            </div>
+
+            <div class="form-btn">
+                <button type="button" onclick="confirmTicket()">XÁC NHẬN ĐẶT VÉ</button>
+            </div>
+
+        </div>
+        <!-- End: Register Form  -->
+
+        <!-- Start: Check Frame -->
+        <div id="check-frame">
+
+            <div class="check-content">
+                <i class="far fa-check-circle"></i>
+                <h2>ĐẶT VÉ THÀNH CÔNG!</h2>
+                <p id="customer"></p>
+                <p id="type"></p>
+                <p id="amount"></p>
+                <p id="bill"></p>
+                <button type="button" onclick="goHome()">TRANG CHỦ</button>
+            </div>
+
+        </div>
+        <!-- end: Check Frame -->
+
+        </div>
+        
+    </div>
+</body>
+</html>
