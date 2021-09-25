@@ -288,3 +288,19 @@ html {
 #validation button:hover {
     opacity: 0.7;
 }
+
+/* Top button */
+#top-btn a {
+    position: fixed;
+    color: rgb(0, 255, 13);
+    font-size: 70px;
+    bottom: 5%;
+    right: 3%;
+    opacity: 0.5;
+    text-shadow: 0px 1px 4px black;
+}
+
+#top-btn a:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
