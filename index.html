@@ -4,38 +4,37 @@
     <meta charset="UTF-8">
     <title>Du lịch Đồng Tháp</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="/assets/img/logo-main.png"/>
-    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="shortcut icon" type="image/png" href="assets/img/logo-main.png"/>
+    <link rel="stylesheet" href="assets/css/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="/assets/js/index.js"></script>
+    <script src="assets/js/index.js"></script>
     <script src="https://kit.fontawesome.com/c2e3085cbe.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id = "main_body">
     <div id="main">
-
-        <div class="header">
+        <div id = "header" class="header">
             <div class="header__logo">
-                <img src="/assets/img/logo-main.png" alt="Logo">
+                <img src="assets/img/logo-main.png" alt="Logo">
             </div>
             <div class="header__search">
-                <input type="text" class="header__search-box" placeholder="Tìm kiếm">
+                <input type="search" class="header__search-box" placeholder="Tìm kiếm">
                 <i class="fas fa-search"></i>
             </div>
             <div class="header__navbar">
                 <ul>
                     <li>Trang chủ</li>
                     <li>Hướng dẫn</li>
-                    <li>Đăng ký</li>
-                    <li>Đăng nhập</li>
+                    <li id = "menuSignUp">Đăng ký</li>
+                    <li id = "menuSignIn">Đăng nhập</li>
                 </ul>
             </div>
             <div class="header__language">
-                <img src="/assets/img/quoc-ki-viet-nam.png" alt="Việt Nam">
+                <img src="assets/img/quoc-ki-viet-nam.png" alt="Việt Nam">
             </div>
         </div>
 
         <div class="poster">
-            <img src="/assets/img/background-header.png" alt="">
+            <img src="assets/img/background-header.png" alt="">
         </div>
 
         <div class="container">
@@ -43,7 +42,7 @@
                 <h2 class="container__welcome-heading">Chào mừng đến với DongThapTravel</h3>
                 <p class="container__welcome-content">
                     Đặt tour tham quan, homestay, cho thuê xe và nhiều trải nghiệm hơn trên DongThapTravel<br/>
-                    <a href="">Đăng nhập</a> hoặc <a href="">Đăng ký</a> để trải nghiệm.
+                    Đăng nhập hoặc đăng ký để trải nghiệm.
                 </p>
             </div>
 
@@ -56,41 +55,41 @@
                 </div>
 
                 <div class="container__places-main">
-                    <div class="containter__places-main-item">
-                        <img src="/assets/img/background-place/dong-sen-thap-muoi.png" alt="Đồng Sen Tháp Mười">
+                    <a class="containter__places-main-item" href="assets/html/dongsenthapmuoi.html">
+                        <img src="assets/img/background-place/dong-sen-thap-muoi.png" alt="Đồng Sen Tháp Mười">
                         <div class="container__places-main-item-info">
                             <h2>Đồng Sen Tháp Mười</h2>
                             <p>Huyện Tháp Mười</p>
                         </div>
-                    </div>
-                    <div class="containter__places-main-item">
-                        <img src="/assets/img/background-place/lang-cu-pho-ban.png" alt="Lăng Cụ Phó Bản">
+                    </a>
+                    <a class="containter__places-main-item" href="assets/html/nguyensinhsac.html">
+                        <img src="assets/img/background-place/lang-cu-pho-ban.png" alt="Lăng Cụ Phó Bản">
                         <div class="container__places-main-item-info">
                             <h2>L.Nguyễn Sinh Sắc</h2>
                             <p>TP.Cao Lãnh</p>
                         </div>
-                    </div>
-                    <div class="containter__places-main-item">
-                        <img src="/assets/img/background-place/xeo-quyt.png" alt="Xẻo Quýt">
+                    </a>
+                    <a class="containter__places-main-item" href="assets/html/xeoquyt.html">
+                        <img src="assets/img/background-place/xeo-quyt.png" alt="Xẻo Quýt">
                         <div class="container__places-main-item-info">
                             <h2>Xẻo Quýt</h2>
                             <p>TP.Cao Lãnh</p>
                         </div>
-                    </div>
-                    <div class="containter__places-main-item">
-                        <img src="/assets/img/background-place/lang-hoa-sa-dec.png" alt="Làng Hoa Sa Đéc">
+                    </a>
+                    <a class="containter__places-main-item" href="assets/html/langhoasd.html">
+                        <img src="assets/img/background-place/lang-hoa-sa-dec.png" alt="Làng Hoa Sa Đéc">
                         <div class="container__places-main-item-info">
                             <h2>Làng Hoa Sa Đéc</h2>
                             <p>TP.Sa Đéc</p>
                         </div>
-                    </div>
-                    <div class="containter__places-main-item">
-                        <img src="/assets/img/background-place/vuon-quoc-gia-tram-chim.png" alt="Tràm Chim">
+                    </a>
+                    <a class="containter__places-main-item" href="assets/html/tramchim.html">
+                        <img src="assets/img/background-place/vuon-quoc-gia-tram-chim.png" alt="Tràm Chim">
                         <div class="container__places-main-item-info">
                             <h2>VQG.Tràm Chim</h2>
                             <p>Huyện Tam Nông</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
 
@@ -102,13 +101,13 @@
 
                 <div class="container__voucher-main">
                     <div class="container__voucher-main-item">
-                        <img src="/assets/img/voucher/voucher-1.png" alt="">
+                        <img src="assets/img/voucher/voucher-1.png" alt="">
                     </div>
                     <div class="container__voucher-main-item">
-                        <img src="/assets/img/voucher/voucher-2.png" alt="">
+                        <img src="assets/img/voucher/voucher-2.png" alt="">
                     </div>
                     <div class="container__voucher-main-item">
-                        <img src="/assets/img/voucher/voucher-3.png" alt="">
+                        <img src="assets/img/voucher/voucher-3.png" alt="">
                     </div>
                 </div>
             </div>
@@ -120,34 +119,34 @@
                 </div>
 
                 <div class="container__suggest-main">
-                    <div class="container__suggest-main-item">
-                        <img src="/assets/img/suggest/suggest-1.png" alt="">
+                    <a href="https://dulich.dongthap.gov.vn/vi/nhakhachhuongsen" class="container__suggest-main-item">
+                        <img src="assets/img/suggest/suggest-1.png" alt="">
                         <div class="container__suggest-main-item-info">
                             <h4>KHÁCH SẠN HƯƠNG SEN</h4>
                             <p>Trải nghiệm không gian hiện đại cho chuyến đi ngay</p>
                         </div>
-                    </div>
-                    <div class="container__suggest-main-item">
-                        <img src="/assets/img/suggest/suggest-2.png" alt="">
+                    </a>
+                    <a href="https://mydongthap.vn/vi/tucalinh" class="container__suggest-main-item">
+                        <img src="assets/img/suggest/suggest-2.png" alt="">
                         <div class="container__suggest-main-item-info">
                             <h4>HOMESTAY TƯ CÁ LINH</h4>
                             <p>Không gian tươi mát cho mọi người ngay tại Tư Cá Linh</p>
                         </div>
-                    </div>
-                    <div class="container__suggest-main-item">
-                        <img src="/assets/img/suggest/suggest-3.png" alt="">
+                    </a>
+                    <a href="https://www.booking.com/hotel/vn/maison-en-bambou-phong-le-vent.html" class="container__suggest-main-item">
+                        <img src="assets/img/suggest/suggest-3.png" alt="">
                         <div class="container__suggest-main-item-info">
                             <h4>MAISON EN BAMBOU PHONG - LE EVENT</h4>
                             <p>Trải nghiệm hoạt động, trò chơi dân gian hấp dẫn</p>
                         </div>
-                    </div>
-                    <div class="container__suggest-main-item">
-                        <img src="/assets/img/suggest/suggest-4.png" alt="">
+                    </a>
+                    <a href="https://tourismcantho.vn/vi/homestay-tai-sa-dec-ngoi-nha-hoa-ech/n2862.html" class="container__suggest-main-item">
+                        <img src="assets/img/suggest/suggest-4.png" alt="">
                         <div class="container__suggest-main-item-info">
                             <h4>NHÀ HOA ẾCH</h4>
                             <p>Tìm hiểu nghề nuôi ếch, trồng hoa kiểng tại homestay</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="container__discover">
@@ -159,19 +158,19 @@
                     <div class="container__discover-main">
                         <a href="https://www.vntrip.vn/cam-nang/du-lich-ha-tien-kien-giang-16541" class="container__discover-main-item">
                             <p class="container__discover-main-item-link">Thông tin Homestay</p>
-                            <img src="/assets/img/discover/discover-1.png" alt="1">
+                            <img src="assets/img/discover/discover-1.png" alt="1">
                             <div class="container__discover-main-item-info">Top 5 những địa điểm du lịch hot ở Hà Tiên nên đến một lần</div>
                         </a>
 
                         <a href="https://dulichkhampha24.com/dia-diem-du-lich-an-giang.html" class="container__discover-main-item">
                             <p class="container__discover-main-item-link">Thông tin Homestay</p>
-                            <img src="/assets/img/discover/discover-2.png" alt="2">
+                            <img src="assets/img/discover/discover-2.png" alt="2">
                             <div class="container__discover-main-item-info">Du lịch An Giang nhất định phải ghé thăm những địa điểm này</div>
                         </a>
 
                         <a href="https://www.vntrip.vn/cam-nang/dia-diem-du-lich-tra-vinh-79995" class="container__discover-main-item">
                             <p class="container__discover-main-item-link">Thông tin Homestay</p>
-                            <img src="/assets/img/discover/discover-3.png" alt="3">
+                            <img src="assets/img/discover/discover-3.png" alt="3">
                             <div class="container__discover-main-item-info">12 địa điểm ở Trà Vinh "nhất định" phải checkin ngay</div>
                         </a>
                     </div>
@@ -185,44 +184,44 @@
                 </div>
 
                 <div class="container__guild-main">
-                    <img src="/assets/img/guild/guild-1.png" alt="g1">
-                    <img src="/assets/img/guild/guild-2.png" alt="g2">
-                    <img src="/assets/img/guild/guild-3.png" alt="g3">
-                    <img src="/assets/img/guild/guild-4.png" alt="g4">
-                    <img src="/assets/img/guild/guild-5.png" alt="g5">
+                    <img src="assets/img/guild/guild-1.png" alt="g1">
+                    <img src="assets/img/guild/guild-2.png" alt="g2">
+                    <img src="assets/img/guild/guild-3.png" alt="g3">
+                    <img src="assets/img/guild/guild-4.png" alt="g4">
+                    <img src="assets/img/guild/guild-5.png" alt="g5">
                 </div>
             </div>
         </div>
 
-        <div class="footer">
+        <div id = "footer" class="footer">
             <div class="footer__download">
                 <div class="footer__download-info">
                     <div>
-                        <img src="/assets/img/dowload/logo-long.png" alt="logoLong">
+                        <img src="assets/img/dowload/logo-long.png" alt="logoLong">
                     </div>
                     <h1 class="footer__download-info-heading">TÌM KIẾM CHỖ Ở VỚI GIÁ TỐT NHẤT</h1>
                     <p class="footer__download-info-content">
                         DongThapTravel hiện là nền tảng đặt tour du lịch trực tuyến #1 Việt Nam. 
                         Đồng hành cùng chúng tôi, bạn có những chuyến đi mang đầy trải nghiệm. 
-                        Với DongThapTravel, việc đặt tour du lịch, homestay, khách sạn, nhà riêng... trở nên nhanh chóng, thuận tiện và dễ dàng.
+                        Với DongThapTravel, việc đặt chỗ ở, biệt thự nghỉ dưỡng, khách sạn, nhà riêng, chung cư... trở nên nhanh chóng, thuận tiện và dễ dàng.
                     </p>
                     <div class="footer__download-info-link">
-                        <img src="/assets/img/dowload/qr-code.png" alt="" class="footer__download-info-link-qrcode">
+                        <img src="assets/img/dowload/qr-code.png" alt="" class="footer__download-info-link-qrcode">
                         <div class="footer__download-info-link-mobile">
-                            <img src="/assets/img/dowload/google-play.png" alt="google-play">
-                            <img src="/assets/img/dowload/app-store.png" alt="app-store">
+                            <img src="assets/img/dowload/google-play.png" alt="google-play">
+                            <img src="assets/img/dowload/app-store.png" alt="app-store">
                         </div>
                     </div>
                 </div>
 
                 <div class="footer__download-img">
-                    <img src="/assets/img/background-footer.png" alt="">
+                    <img src="assets/img/background-footer.png" alt="">
                 </div>
             </div>
 
             <div class="footer__info">
                 <div class="footer__info-contact">
-                    <img class="footer__info-contact-img" src="/assets/img/dowload/logo-long.png" alt="LogoLong">
+                    <img class="footer__info-contact-img" src="assets/img/dowload/logo-long.png" alt="LogoLong">
 
                     <div class="footer__info-contact-messenger">
                         <div class="footer__info-contact-icon">
@@ -230,7 +229,7 @@
                         </div>
                         <div class="footer__info-contact-content">
                             <h4>Messenger</h4>
-                            <a href="">https://messenger.com</a>
+                            <a href="https://messenger.com" class="footer__messenger" >https://messenger.com</a>
                         </div>
                     </div>
 
@@ -247,11 +246,11 @@
                 <div class="footer__info-homestay">
                     <p class="footer__info-heading">TOP HOMESTAY ĐƯỢC YÊU THÍCH</p>
                     <ul class="footer__info-content">
-                        <li>Homestay Cao Lãnh</li>
-                        <li>Homestay Sa Đéc</li>
-                        <li>Homestay Tam Nông</li>
-                        <li>Homestay Tháp Mười</li>
-                        <li>Homestay Lai Vung</li>
+                        <li><a href="https://kenhhomestay.com/cao-lanh-homestay-dong-thap/">Homestay Cao Lãnh</a></li>
+                        <li><a href="https://kenhhomestay.com/homestay-sa-dec/">Homestay Sa Đéc</a></li>
+                        <li><a href="https://www.traveloka.com/vi-vn/hotel/vietnam/tram-chim-homestay-3000010036849">Homestay Tam Nông</a></li>
+                        <li><a href="https://www.traveloka.com/vi-vn/hotel/vietnam/lotus-lake-homestay-3000010036846">Homestay Tháp Mười</a></li>
+                        <li><a href="https://dulich.dongthap.gov.vn/vi/homestayngoinhaquyt">Homestay Lai Vung</a></li>
                     </ul>
                 </div>
                 <div class="footer__info-favor">
@@ -278,11 +277,11 @@
                     <p class="footer__info-heading">TẢI ỨNG DỤNG</p>
                     <div class="footer__info-app-link">
                         <div class="footer__info-app-link-qrcode">
-                            <img src="/assets/img/dowload/qr-code.png" alt="">
+                            <img src="assets/img/dowload/qr-code.png" alt="">
                         </div>
                         <div class="footer__info-app-link-mobile">
-                            <img src="/assets/img/dowload/google-play.png" alt="">
-                            <img src="/assets/img/dowload/app-store.png" alt="">
+                            <img src="assets/img/dowload/google-play.png" alt="">
+                            <img src="assets/img/dowload/app-store.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -291,14 +290,14 @@
             <div class="footer__certificate">
                 <div class="footer__certificate-1">
                     <h3 class="footer__certificate-heading">SECURE YOUR TRANSACTION</h3>
-                    <img src="/assets/img/footer-certificate/visa.svg" alt="">
-                    <img src="/assets/img/footer-certificate/mastercard.svg" alt="">
-                    <img src="/assets/img/footer-certificate/maestro.svg" alt="">
+                    <img src="assets/img/footer-certificate/visa.svg" alt="">
+                    <img src="assets/img/footer-certificate/mastercard.svg" alt="">
+                    <img src="assets/img/footer-certificate/maestro.svg" alt="">
                 </div>
                 <div class="footer__certificate-2">
                     <h3 class="footer__certificate-heading">CERTIFICATION</h3>
-                    <img src="/assets/img/footer-certificate/bct.png" alt="">
-                    <img src="/assets/img/footer-certificate/dmca.png" alt="">
+                    <img src="assets/img/footer-certificate/bct.png" alt="">
+                    <img src="assets/img/footer-certificate/dmca.png" alt="">
                 </div>
                 <div class="footer__certificate-3">
                     <h3 class="footer__certificate-heading">FOLLOW US</h3>
@@ -307,10 +306,10 @@
                     <i class="fab fa-youtube"></i>
                 </div>
             </div>
-            <div class="footer__copyright">
+            <div id = "footer__copyright" class="footer__copyright">
                 <p>
                     © 2021 DongThapTravel. Bản quyền thuộc DongThapTravel 
-                    Việt Nam. Mọi hành vi sao chép đều là 
+                    Việt Nam - MSDN: 123456789. Mọi hành vi sao chép đều là 
                     phạm pháp nếu không có sự cho phép bằng văn bản của chúng 
                     tôi.
                 </p>
@@ -324,6 +323,123 @@
                 <p>Phan Thanh Hải - 2051010083</p>
                 <p>Huỳnh Hiệp Thiên - 2051010290</p>
             </div>
+        </div>
+    </div>
+    <!-- Bulb -->
+    <div class="bulb">
+        <i class="far fa-lightbulb"></i>
+    </div>
+
+    <!-- Kiểm tra đăng nhập -->
+    <div id="kiemtra_dangnhap" class="check">
+        <div class="check__form">
+            <i class="fas fa-exclamation-circle check__form-icon"></i>
+            <p class="check__form-content">Vui lòng đăng nhập trước!</p>
+            <button id = "checkSignIn" class="check__form-btn">Đăng nhập</button>
+        </div>
+    </div>
+
+    <!-- Khung đăng nhập -->
+    <div id="dangnhap" class="signin">
+        <div class="signin__form">
+            <div class="signin__form-heading">
+                <h1>Đăng nhập tài khoản của bạn</h1>
+                <span class="form-out">X</span>
+            </div>
+
+            <div class="signin__form-media">
+                <div class="signin__form-media-item">
+                    <i class="fab fa-google signin__form-media-item-icon"></i>
+                    <span class="signin__form-media-item-content">Đăng nhập với Google</span>
+                </div>
+                <div class="signin__form-media-item">
+                    <i class="fab fa-facebook signin__form-media-item-icon"></i>
+                    <span class="signin__form-media-item-content">Đăng nhập với Facebook</span>
+                </div>
+                <div class="signin__form-media-item">
+                    <i class="fab fa-apple signin__form-media-item-icon"></i>
+                    <span class="signin__form-media-item-content">Đăng nhập với Apple</span>
+                </div>
+            </div>
+
+            <div class="signin__form-or">
+               ----------------------- hoặc -----------------------
+            </div>
+
+            <div class="signin__form-get">
+                <div class="signin__form-get-name">
+                    <label for="name-login" class="signin__form--label">Email/Số điện thoại</label><br/>
+                    <input class="signin__form--input" id="name-login" type="text">
+                </div>
+                <div class="signin__form-get-pwd">
+                    <label for="password-login" class="signin__form--label">Mật khẩu</label><br/>
+                    <input class="signin__form--input" id="password-login" type="password">
+                </div>
+                <button id = "login" class="signin__form-get-btn">
+                    Đăng nhập
+                </button>
+            </div>
+
+            <div class="signin__form-more">
+                <a>Quên mật khẩu?</a>
+                <p>Chưa có tài khoản? <a id = "toSignUp">Đăng ký</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Khung đăng ký -->
+    <div id="dangky" class="signin">
+        <div class="signin__form">
+            <div class="signin__form-heading">
+                <h1>Bắt đầu với Du lịch Đồng Tháp</h1>
+                <span class="form-out">X</span>
+            </div>
+
+            <div class="signin__form-media">
+                <div class="signin__form-media-item">
+                    <i class="fab fa-google signin__form-media-item-icon"></i>
+                    <span class="signin__form-media-item-content">Đăng ký với Google</span>
+                </div>
+                <div class="signin__form-media-item">
+                    <i class="fab fa-facebook signin__form-media-item-icon"></i>
+                    <span class="signin__form-media-item-content">Đăng ký với Facebook</span>
+                </div>
+                <div class="signin__form-media-item">
+                    <i class="fab fa-apple signin__form-media-item-icon"></i>
+                    <span class="signin__form-media-item-content">Đăng ký với Apple</span>
+                </div>
+            </div>
+
+            <div class="signin__form-or">
+               ----------------------- hoặc -----------------------
+            </div>
+
+            <div class="signin__form-get">
+                <div class="signin__form-get-name">
+                    <label for="name-login" class="signin__form--label">Email/Số điện thoại</label><br/>
+                    <input class="signin__form--input" id="name-sign-up" type="text">
+                </div>
+                <div class="signin__form-get-pwd">
+                    <label for="name-login" class="signin__form--label">Mật khẩu</label><br/>
+                    <input class="signin__form--input" id="password-sign-up" type="password">
+                </div>
+                <button id = "signIn" class="signin__form-get-btn">
+                    Đăng ký
+                </button>
+            </div>
+
+            <div class="signin__form-more">
+                <p>Đã có tài khoản? <a id = "toSignIn">Đăng nhập</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kiểm tra đăng ký -->
+    <div id="kiemtra_dangky" class="check">
+        <div class="check__form">
+            <i class="fas fa-exclamation-circle check__form-icon"></i>
+            <p class="check__form-content">Vui lòng đăng nhập trước!</p>
+            <button id = "checkSignUp" class="check__form-btn">Đăng nhập</button>
         </div>
     </div>
 </body>
