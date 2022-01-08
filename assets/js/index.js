@@ -116,6 +116,24 @@ $(document).ready(function(){ //ready for all function
         $('#dangky').css('display', 'none');
         $('#dangnhap').css('display', 'none');
     });
+
+    // Responsive
+    $('.header__navbar-responsive').click(function() {
+        $('.modal').css('display', 'block')
+    });
+
+    $('.navbar__heading-out').click(function() {
+        $('.modal').css('display', 'none')
+    });
+    $('#navbar__body-item-dangky').click(function() {
+        $('#dangky').css('display', 'block');
+        $('.modal').css('display', 'none')
+    });
+    $('#navbar__body-item-dangnhap').click(function() {
+        $('#dangnhap').css('display', 'block');
+        $('.modal').css('display', 'none')
+    });
 })
+
 
 
