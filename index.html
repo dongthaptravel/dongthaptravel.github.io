@@ -1,11 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Du lịch Đồng Tháp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="assets/img/logo-main.png"/>
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/js/index.js"></script>
     <script src="https://kit.fontawesome.com/c2e3085cbe.js" crossorigin="anonymous"></script>
@@ -30,6 +33,9 @@
             </div>
             <div class="header__language">
                 <img src="assets/img/quoc-ki-viet-nam.png" alt="Việt Nam">
+            </div>
+            <div class="header__navbar-responsive">
+                <i class="fas fa-list-ul"></i>
             </div>
         </div>
 
@@ -440,6 +446,32 @@
             <i class="fas fa-exclamation-circle check__form-icon"></i>
             <p class="check__form-content">Vui lòng đăng nhập trước!</p>
             <button id = "checkSignUp" class="check__form-btn">Đăng nhập</button>
+        </div>
+    </div>
+    <!-- Navbar responsive -->
+    <div class="modal">
+        <div class="navbar__main">
+            <div class="navbar__heading">
+                <img src="assets/img/logo-main.png" alt="" class="navbar__heading-logo-img">
+                <p class="navbar__heading-logo-title">DU LỊCH ĐỒNG THÁP</p>
+                <i class="fas fa-times navbar__heading-out"></i>
+            </div>
+            <div class="navbar__body">
+                <ul class="navbar__body-list">
+                    <li class="navbar__body-item">
+                        <a href="/index.html" class="navbar__body-item-link">Trang chủ</a>
+                    </li>
+                    <li class="navbar__body-item">
+                        Hướng dẫn
+                    </li>
+                    <li class="navbar__body-item" id="navbar__body-item-dangky">
+                        Đăng kí
+                    </li>
+                    <li class="navbar__body-item" id="navbar__body-item-dangnhap">
+                        Đăng nhập
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
