@@ -25,14 +25,12 @@ $(document).ready(function(){ //ready for all function
         else
         {
             //Not complete, warning table pop up and warning
-            $("#kiemtra_dangnhap").css("display","block");
-            $("#dangnhap").css("display","none");
+            $(".signin__form-alert").css("visibility","unset");
         }
     });
 
     //Closing warning table & sign in
     $("#checkSignIn").click(function(){
-        $("#dangnhap").css("display","block");
         $("#kiemtra_dangnhap").css("display","none");
     });
 
@@ -40,6 +38,7 @@ $(document).ready(function(){ //ready for all function
     $("a#toSignUp").click(function(){
         $("#dangnhap").css("display","none");
         $("#dangky").css("display","block");
+        $(".signin__form-alert").css("visibility", "hidden");
     })
 
     //SIGN UP FUNCTIONS
@@ -65,8 +64,7 @@ $(document).ready(function(){ //ready for all function
         else
         {
             //Not complete, warning table pop up and warning
-            $("#kiemtra_dangky").css("display","block");
-            $("#dangky").css("display","none");
+            $(".signin__form-alert").css("visibility","unset");
         }
     });
 
@@ -80,6 +78,7 @@ $(document).ready(function(){ //ready for all function
     $("a#toSignIn").click(function(){
         $("#dangnhap").css("display","block");
         $("#dangky").css("display","none");
+        $(".signin__form-alert").css("visibility", "hidden");
     })
     //prevent navigation if isn't login or sign up
     $(".containter__places-main-item").click(function(){
@@ -93,20 +92,44 @@ $(document).ready(function(){ //ready for all function
     //BULB FUNCTIONS
     light = 1;
     $(".bulb").click(function(){
-        var body = document.getElementById("main_body");
-        var header = document.getElementById("header");
+        var body = $("#main_body");
+        var header = $("#header");
         if(light) 
         {
-            body.style.backgroundColor = "gray";
-            body.style.color = "white";
-            header.style.backgroundColor = "lightgray";
+            $("#main_body").css({
+                "backgroundColor":"gray",
+                "color":"white"
+            })
+            $("#header").css({
+                "backgroundColor":"lightgray"
+            })
+
+            $("#dangnhap").css({
+                "color":"black"
+            })
+
+            $("#kiemtra_dangnhap").css({
+                "color":"black"
+            })
+
+            $("#dangky").css({
+                "color":"black"
+            })
+
+            $("#kiemtra_dangky").css({
+                "color":"black"
+            })
             light = 0;
         }
         else 
         {
-            body.style.backgroundColor = "white";
-            body.style.color = "black";
-            header.style.backgroundColor = "white";
+            $("#main_body").css({
+                "backgroundColor":"white",
+                "color":"black",
+            })
+            $("#header").css({
+                "backgroundColor":"white"
+            })
             light = 1;
         }
     });
@@ -134,6 +157,3 @@ $(document).ready(function(){ //ready for all function
         $('.modal').css('display', 'none')
     });
 })
-
-
-
